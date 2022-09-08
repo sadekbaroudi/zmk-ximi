@@ -1,15 +1,8 @@
-identifier: zaphod
-name: Zaphod
-type: keyboard
-arch: arm
-toolchain:
-  - zephyr
-  - gnuarmemb
-  - xtools
-supported:
-  - adc
-  - usb_device
-  - ble
-  - ieee802154
-  - pwm
-  - watchdog
+file_format: "1"
+id: ximi
+name: ximi
+type: shield
+url: https://github.com/sadekbaroudi/ximi/
+requires: [pro_micro]
+features:
+  - keys
