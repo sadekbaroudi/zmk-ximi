@@ -44,7 +44,7 @@
 	chosen {
 		zmk,kscan = &kscan;
 		zmk,matrix_transform = &transform;
-		zmk,underglow = &led_strip;
+		// zmk,underglow = &led_strip;
 	};
 
 	transform: transform {
