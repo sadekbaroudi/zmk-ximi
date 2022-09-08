@@ -1,5 +1,5 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_ARACHNOPHOBE
+config SHIELD_XIMI
     def_bool $(shields_list_contains,ximi)
