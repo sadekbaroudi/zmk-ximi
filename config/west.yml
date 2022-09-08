@@ -1,0 +1,17 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: sadekbaroudi
+      url-base: https://github.com/sadekbaroudi
+  projects:
+    # - name: zmk
+    #   remote: zmkfirmware
+    #   revision: main
+    #   import: app/west.yml
+    - name: zmk
+      remote: sadekbaroudi
+      revision: rp2040-with-combo-fix
+      import: app/west.yml
+  self:
+    path: config

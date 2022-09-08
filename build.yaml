@@ -1,0 +1,2 @@
+board: [seeeduino_xiao_rp2040, seeeduino_xiao, seeeduino_xiao_ble]
+shield: [ximi]
