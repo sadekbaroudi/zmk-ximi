@@ -20,12 +20,30 @@
 		#gpio-cells = <2>;
 		ngpios = <8>;
 	};
+
+    led_strip: ws2812@1 {
+        compatible = "worldsemi,ws2812-spi";
+        label = "SK6812minie";
+
+        /* SPI */
+        reg = <0>; /* ignored, but necessary for SPI bindings */
+        spi-max-frequency = <4000000>;
+
+        /* WS2812 */
+        chain-length = <21>;
+        spi-one-frame = <0x70>;
+        spi-zero-frame = <0x40>;
+        color-mapping = <LED_COLOR_ID_GREEN
+                         LED_COLOR_ID_RED
+                         LED_COLOR_ID_BLUE>;
+    };
 };
 
 / {
 	chosen {
 		zmk,kscan = &kscan;
 		zmk,matrix_transform = &transform;
+		zmk,underglow = &led_strip;
 	};
 
 	transform: transform {
