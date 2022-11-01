@@ -3,6 +3,5 @@ id: ximi
 name: ximi
 type: shield
 url: https://github.com/sadekbaroudi/ximi/
-requires: [pro_micro]
 features:
   - keys

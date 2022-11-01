@@ -9,6 +9,9 @@ config ZMK_KEYBOARD_NAME
 config SPI
         default y
 
+config SYSTEM_WORKQUEUE_STACK_SIZE
+    default 2048
+
 if ZMK_BACKLIGHT
 
 config LED_GPIO
